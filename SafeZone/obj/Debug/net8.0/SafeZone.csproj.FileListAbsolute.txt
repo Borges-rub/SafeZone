@@ -28,3 +28,4 @@ C:\Users\Arthur\Documents\code\SafeZone\SafeZone\obj\Debug\net8.0\refint\SafeZon
 C:\Users\Arthur\Documents\code\SafeZone\SafeZone\obj\Debug\net8.0\SafeZone.pdb
 C:\Users\Arthur\Documents\code\SafeZone\SafeZone\obj\Debug\net8.0\SafeZone.genruntimeconfig.cache
 C:\Users\Arthur\Documents\code\SafeZone\SafeZone\obj\Debug\net8.0\ref\SafeZone.dll
+C:\Users\Arthur\Documents\code\SafeZone\SafeZone\obj\Debug\net8.0\SafeZone.sourcelink.json

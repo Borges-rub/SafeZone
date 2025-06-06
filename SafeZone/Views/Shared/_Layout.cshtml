@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ptBr">
 
 <head>
     <meta charset="utf-8" />
@@ -37,42 +37,65 @@
             height: 100%;
         }
 
-      
+        .esp {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topo {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            height: 80px;
+
+        }
+
+        .um {
+            display: flex;
+            flex-direction: row;
+            gap: 41px;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 28px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .serv {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SafeZone</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
-                                asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="topo">
+            <div class="esp">
+                <a class="logo" asp-area="" asp-controller="Home" asp-action="Index">SafeZone</a>
+
+                    <div class="um">
+                        <a class="serv" asp-area="" asp-controller="Home" asp-action="Index">Serviços</a>
+                        <a class="serv" asp-area="" asp-controller="Home" asp-action="index">Contatos</a>
+                        <a class="serv" asp-area="" asp-controller="Home" asp-action="Index">Sobre
+                            nós</a>
+                    </div>
             </div>
         </nav>
     </header>
-        <main role="main" class="DivAzul" >
-            @RenderBody()
-        </main>
+    <main role="main" class="DivAzul">
+        @RenderBody()
+    </main>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - SafeZone - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
